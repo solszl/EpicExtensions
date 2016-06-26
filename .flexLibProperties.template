@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.shrimp.ext.audio.MusicAS"/>
+    <classEntry path="com.shrimp.ext.audio.SoundAS"/>
+    <classEntry path="com.shrimp.ext.audio.SoundItem"/>
+    <classEntry path="com.shrimp.ext.audio.SoundManager"/>
+    <classEntry path="com.shrimp.ext.audio.SoundTween"/>
+    <classEntry path="com.shrimp.ext.audio.SoundEvent"/>
+    <classEntry path="com.shrimp.ext.utils.ColorUtil"/>
+    <classEntry path="com.shrimp.ext.color.ColorMatrix"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
