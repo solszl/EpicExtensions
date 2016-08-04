@@ -1,7 +1,6 @@
 package com.shrimp.ext.controls
 {
 	import com.vhall.framework.app.manager.RenderManager;
-	import com.vhall.framework.ui.container.Box;
 	import com.vhall.framework.ui.controls.Image;
 	import com.vhall.framework.ui.controls.UIComponent;
 	import com.vhall.framework.ui.utils.ComponentUtils;
@@ -31,15 +30,19 @@ package com.shrimp.ext.controls
 		override protected function createChildren():void
 		{
 			super.createChildren();
-			_trackOffset = new Point();
+			_trackOffset = new Point(2, 2);
 
 			bg = new Image(this);
 			bg.source = ComponentUtils.genInteractiveRect(_width, _height, null, 0, 0, 0X000000);
 			bg.rect = new Rectangle(2, 2, 2, 2);
+			bg.width = _width;
+			bg.height = _height;
 
 			_track = new Image(this);
 			_track.source = ComponentUtils.genInteractiveRect(10, 10, null, 0, 0, 0xFFFFFF);
 			_track.rect = new Rectangle(2, 2, 2, 2);
+			_track.setSize(10, 10);
+			trackOffset = _trackOffset;
 		}
 
 		override public function set width(value:Number):void
