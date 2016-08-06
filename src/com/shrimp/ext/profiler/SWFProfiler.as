@@ -66,11 +66,11 @@
 			minMem = Number.MAX_VALUE;
 			maxMem = Number.MIN_VALUE;
 
-			var cm:ContextMenu = new ContextMenu();
+			var cm:ContextMenu = context.contextMenu;
 			cm.hideBuiltInItems();
 			ci = new ContextMenuItem("Show Profiler", true);
 			addEvent(ci, ContextMenuEvent.MENU_ITEM_SELECT, onSelect);
-			cm.customItems = [ci];
+			cm.customItems.push(ci);
 			context.contextMenu = cm;
 
 			start();
